@@ -1,0 +1,22 @@
+//This section of code is used to evaluate whether a person can be deemed as a baby, child, teen, adult or senior citizen based on the age that is input. The program is designed to determine this based on preprogrammed age ranged for each catagory using if else if statements.
+
+const lifePhase = (age) => {
+  if (age < 0 || age > 140){
+    return 'This is not a valid age'
+    } else if (age < 4){
+        return 'baby';
+    } else if(age < 12){
+        return 'child';
+    } else if (age < 19){
+        return 'teen';
+    } else if (age < 64){
+        return 'adult';
+    } else if (age < 140){
+        return 'senior citizen';
+ 
+    }
+}
+
+//This line of code below is used to print the result of a number entered into the function.
+
+console.log(lifePhase(37))
