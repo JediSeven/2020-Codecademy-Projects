@@ -1,0 +1,32 @@
+//The first line gives a runner a random race number.
+let raceNumber = Math.floor(Math.random() * 1000);
+
+//This line of code assigns the race number from line one to a variable called "early."
+let early = raceNumber;
+
+//This line of code identifies the runners age.
+let runnerAge = '19';
+
+//This line of code ensures that adult runners are assigned a raceNumber above the number 1000.
+if (early && runnerAge > 18) {
+  raceNumber += 1000;
+}
+
+//This line of code is how the program will respond if the registrant is above 18 years of age and registered early.
+if (runnerAge > 18 && early) {
+  console.log(`Your number in the race is ${raceNumber} and you will begin the race at 9:30AM.`);
+}
+
+//This line of code is how the program will respond if the registrant is above 18 years of age but registered late.
+else if (runnerAge > 18 && raceNumber < 1000) {
+  console.log('You will begin the race at 11:00 AM.');
+  }
+
+//This line of code is how the program will respond if the registrant is below 18 years of age.
+else if (runnerAge < 18) {
+  console.log(`Your number in the race is ${raceNumber} and you will begin the race at 12:30 PM.`)
+}
+
+//This is a final response if the previous checks were not true conditions.
+else {
+  console.log('Please see the registration desk for further assistance.')
