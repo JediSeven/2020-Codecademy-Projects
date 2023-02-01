@@ -1,0 +1,58 @@
+//This section of code is a function that identifies how many hours of sleep were attained per day of the week. For example: If today were sunday the return of this code way say the user got 5 hours of sleep.
+const getSleepHours = (day) => { 
+
+  switch (day){
+    case 'monday':
+      return 8;
+      break
+    case 'tuesday':
+      return 7;
+      break
+    case 'wednesday':
+      return 4;
+      break
+    case 'thursday':
+      return 0;
+      break
+    case 'friday':
+      return 11;
+      break
+    case 'saturday':
+      return 6;
+      break
+    case 'sunday':
+      return 5;
+      break
+    }}
+
+//This section of code is a function that provides the sum of hours slept throughout the week.
+    const getActualSleepHours = () => {
+      return getSleepHours('monday') + getSleepHours('tuesday') + getSleepHours('wednesday') + getSleepHours('thursday') + getSleepHours('friday') + getSleepHours('saturday')  + getSleepHours('sunday'); 
+    }
+    console.log('The total amount of actual sleep you got this week is ' + getActualSleepHours() + ' hours.')
+
+    const getIdealSleepHours = () => {
+      idealHours = 8
+      return idealHours * 7;
+    }
+
+//This line of code is used to print to the console the ideal amount of hours the user has set they would like to achieve per week.
+    console.log('Ideally, you are looking to get ' + getIdealSleepHours() + ' hours of sleep in a week.')
+
+//This section of code is used to evaluate if the user was able to achieve the amount of sleep in the week that they had initially desired.
+    const calculateSleepDebt = () => {
+      actualSleepHours = getActualSleepHours();
+      idealSleepHours = getIdealSleepHours();
+      if (actualSleepHours === idealSleepHours){
+        return 'This week you got the perfect amount of sleep!'}
+      if (actualSleepHours < idealSleepHours){
+        return 'Looks like you didnt get quite enough sleep. Your goal was ' + idealSleepHours + ' hours of sleep' + '.' + 'You ended up only getting ' + actualSleepHours + ' hours of sleep.'
+      if (actualSleepHours > idealSleepHours) {
+        return 'It appears you may have gotten more sleep than intended. Your goal was ' + idealSleepHours + ' hours of sleep. This week you logged ' + actualSleepHours + 'hours of sleep.'
+      }
+      }
+
+    }
+
+//This line of code will print the amount of sleep they got for the week and compare it to what the user wanted to get.
+    console.log(calculateSleepDebt())
