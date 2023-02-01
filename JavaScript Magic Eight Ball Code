@@ -1,0 +1,43 @@
+//This is a tenary statement determines how the user will be greeted if a particular name is entered or not. If the user is not named Roscoe it will simply respond with 'Hello!'
+let userName = '';
+'Roscoe' ? console.log('Hello, Roscoe! Ask your question...') : console.log('Hello!');
+
+//This line of code is the question being asked to the EightBall by the user.
+let userQuestion = 'Will I end up marrying Emily?';
+console.log(`The user asked: ${userQuestion}`);
+
+//This line of code is used to create a random number within the range of 0 and 8. Math.Floor is used to round the number down to the nearest whole number.
+const randomNumber = Math.floor(Math.random() * 8);
+Math.floor(randomNumber);
+
+//This section of the program is used to present the many responses that the EightBall can provide based on the random number presented previous.
+let eightBall =randomNumber;
+switch (eightBall) {
+  case 0:
+    eightBall = 'It is certain'
+    break
+  case 1:
+    eightBall = 'It is decidedly so'
+    break
+  case 2:
+    eightBall = 'Reply hazy try again'
+    break
+  case 3:
+    eightBall = 'Cannot predict now'
+    break
+  case 4:
+    eightBall = 'Do not count on it'
+    break
+  case 5:
+    eightBall = 'My sources say no'
+    break
+  case 6:
+    eightBall = 'Outlook not so good'
+    break
+  case 7:
+    eightBall = 'Signs point to yes'
+    break
+}
+
+//This line of code is to print the response of the Eightball.
+console.log(`The eightball answered: ${eightBall}`)
