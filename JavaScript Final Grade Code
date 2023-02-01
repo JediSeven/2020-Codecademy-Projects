@@ -1,0 +1,26 @@
+//This section of code defines a function called "finalGrade." The funtion is meant to be used to determine if an individual with a total of three grades receives an "A, B, C, D or F" for the class.
+const finalGrade = (homework, midterm, final) => {
+
+//This line of code is an overall check to ensure that the grades are not over 100 or below 0 as that would be invalid in the traditional grading system.
+  let averageGrade = (homework + midterm + final) / 3
+  if (homework < 0 || homework > 100 || midterm < 0 || midterm > 100 || final < 0 || final > 100)
+
+//The code below is used to determine the final grade for the class based on the sum of the three grades entered. Whatever range they fall within will determine the students grade.
+{
+    return 'You have entered an invalid grade.';
+  } if (averageGrade < 60){
+    return 'F';
+  } else if (averageGrade < 70){
+    return 'D';
+  } else if (averageGrade < 80){
+    return 'C';
+  } else if (averageGrade < 90){
+    return 'B';
+  } else if (averageGrade < 100){
+    return 'A';
+  }
+}
+
+//This lines of code below are used to print and test the code above to ensure it works accordingly.
+console.log(finalGrade(45, 85, 95)) //Should print 'C'
+console.log(finalGrade(99, 92, 95)) // Should print 'A'
