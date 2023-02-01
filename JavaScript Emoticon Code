@@ -1,0 +1,28 @@
+// This function is to further demonstrate my ability to execute JavaScript functions. The following function uses switch, case, breaks to identify which of the conditions is present and upon identification determines which emoticon to return to the called function.
+
+const toEmoticon = (Emo) => {
+  switch (Emo){
+    case 'shrug':
+    return '|_{"}_|'
+  break
+    case 'smiley face':
+    return ':)'
+  break
+    case 'frowny face':
+    return ':('
+  break
+    case 'winky face':
+    return ';)'
+  break
+    case 'heart':
+    return '<3'
+  break
+    default:
+    return '|_(* ~ *)_|'
+  break
+  }
+}
+
+//The line of code below is used to test the JavaScript Function to make sure it works. It should return the default answer above.
+
+console.log(toEmoticon("whatever")) 
