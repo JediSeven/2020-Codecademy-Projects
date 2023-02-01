@@ -1,0 +1,16 @@
+//This line of code is to provide my current age and is subject to change.
+let myAge = 30;
+//This line of code is to provide clarity to the dogs early years of age when the highest comparison to human years is present.
+let earlyYears = 2;
+//This line of code is to calculate the amount of dog years that pass compared to humans in their first two years of life.
+earlyYears *= 10.5;
+//The first two years of a dogs life compared to a human life equate to 21 years of life. After that each following year equates to 4 years of human life. So, the equation below is a continuation to account for the additional years after the first 2 years.
+laterYears = myAge - 2;
+//This line of code is to do the math for the additional years that come after the first two years of the dogs life as they are not as highly equated in human years.
+laterYears *= 4;
+//This is the formula to determine my age in dog years.
+myAgeInDogYears = earlyYears + laterYears;
+//The following 2 lines of code below are to identify my name and to ensure it is in lowercase format. The last line prints out a string inclusive of literals that form a sentence for an end user view.
+myName = 'Roscoe'
+myName = myName.toLowerCase(myName)
+console.log(`My name is ${myName}. I am ${myAge} years old in human years which is ${myAgeInDogYears} years old in dog years.`)
