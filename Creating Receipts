@@ -1,0 +1,65 @@
+#Task 1: Create a variable called lovely_loveseat_description.
+
+lovely_loveseat_description = "Lovely Loveseat. Tufted polyester blend on wood. 32 inches high x 40 inches wide x 30 inches deep. Red or white. \n";
+
+#Task 2: Create a price for the loveseat. Create a variable lovely_loveseat_price and set it equal to 254.00.
+
+lovely_loveseat_price = 254.00;
+
+#Task 3: Create a variable called stylish_settee_description
+
+stylish_settee_description = "Stylish Settee. Faux leather on birch. 29.50 inches high x 54.75 inches wide x 28 inches deep. Black.";
+
+#Task 4: Create a variable stylish_settee_price
+
+stylish_settee_price = 180.50;
+
+#Task 5: Create a new variable called luxurious_lamp_description
+
+luxurious_lamp_description = "Luxurious Lamp. Glass and iron. 36 inches tall. Brown with cream shade.";
+
+#Task 6: Create a variable called luxurious_lamp_price
+
+luxurious_lamp_price = 52.15;
+
+#Task 7: Define the variable sales_tax and set it equal to .088. That’s 8.8%.
+
+sales_tax = .088;
+
+#Task 8: Our first customer is making their purchase! Let’s keep a running tally of their expenses by defining a variable called customer_one_total. Since they haven’t purchased anything yet, let’s set that variable equal to 0 for now.
+customer_one_total = 0;
+
+#Task 9: Create a variable called customer_one_itemization and set that equal to the empty string ""
+
+customer_one_itemization = "";
+
+#Task 10: Our customer has decided they are going to purchase our Lovely Loveseat! Add the price to customer_one_total.
+
+customer_one_total += lovely_loveseat_price;
+
+#Task 11: Let’s start keeping track of the items our customer purchased. Add the description of the Lovely Loveseat to customer_one_itemization.
+
+customer_one_itemization += lovely_loveseat_description;
+
+#Task 12: Our customer has also decided to purchase the Luxurious Lamp! Let’s add the price to the customer’s total.
+
+customer_one_total += luxurious_lamp_price;
+
+#Task 13: Let’s keep the itemization up-to-date and add the description of the Luxurious Lamp to our itemization.
+
+customer_one_itemization += luxurious_lamp_description;
+
+#Task 14: Create a variable called customer_one_tax and set it equal to customer_one_total times sales_tax.
+
+customer_one_tax = customer_one_total * sales_tax;
+
+#Task 15: Add the sales tax to the customer’s total cost.
+
+customer_one_total += customer_one_tax;
+
+#Task 16: Print the customers receipt!
+
+print("Customer One Items: \n");
+print(customer_one_itemization +"\n");
+print("Customer One Total:");
+print(customer_one_total);
